@@ -70,8 +70,8 @@ export default function Home() {
               className="max-w-[750px] text-center text-lg text-white sm:text-xl"
             >
               Imagine a world where everyone get a fair shot to show and reach
-              their full potential. AIME's models are the future of expert-led
-              operations.
+              their full potential. AIME&apos;s models are the future of
+              expert-led operations.
               {/* AIME's models are the future of expert-led operations intelligent systems that
               enable expert-led education, fair hiring, */}
               {/* <br /> and efficient onboarding in high-impact, niche industries
