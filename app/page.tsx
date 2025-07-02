@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative flex min-h-screen flex-col bg-[#020c12] text-[#3cc1ff]">
+    <div className="relative flex min-h-screen flex-col bg-emerald-950 text-amber-500">
       <SiteHeader />
       <main className="flex-1 px-4">
         <section className="flex min-h-screen flex-col items-center justify-center space-y-10 py-24">
@@ -42,35 +42,40 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
               href="#"
-              className="inline-flex items-center gap-1 rounded-full bg-[#1a1a1a] px-4 py-1.5 text-sm font-medium text-[#3cc1ff] shadow-md hover:shadow-cyan-500/50"
+              className="inline-flex items-center gap-1 rounded-full bg-[#1a1a1a] px-4 py-1.5 text-sm font-medium text-amber-600 shadow-md hover:shadow-cyan-500/50"
             >
               🎉{" "}
               <Separator
-                className="h-4 border-cyan-400"
+                className="h-4 border-amber-400"
                 orientation="vertical"
               />{" "}
-              Introducing <span className="text-[#00ffff]">Halo</span>
+              Introducing <span className="text-amber-600">AIME</span>
             </motion.a>
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-4xl font-bold leading-tight tracking-tighter text-[#3cc1ff] md:text-6xl lg:text-7xl lg:leading-[1.1]"
+              className="text-4xl font-bold leading-tight tracking-tighter text-amber-500 md:text-6xl lg:text-7xl lg:leading-[1.1]"
             >
               Join the waitlist for
               <br />
-              <span className="text-[#00ffff] drop-shadow-lg">Halo</span>
+              <span className="text-amber-500 drop-shadow-lg">AIME</span>
             </motion.h1>
 
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="max-w-[750px] text-center text-lg text-gray-400 sm:text-xl"
+              className="max-w-[750px] text-center text-lg text-white sm:text-xl"
             >
-              Halo is designed to provide future engineers with opportunities to
-              <br /> expand their industrial experience.
+              Imagine a world where everyone get a fair shot to show and reach
+              their full potential. AIME's models are the future of expert-led
+              operations.
+              {/* AIME's models are the future of expert-led operations intelligent systems that
+              enable expert-led education, fair hiring, */}
+              {/* <br /> and efficient onboarding in high-impact, niche industries
+              across Africa. */}
             </motion.span>
 
             <motion.div
@@ -81,14 +86,14 @@ export default function Home() {
             >
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <Input
-                  className="h-12 px-4 bg-[#1a1a1a] text-white border border-[#3cc1ff] focus:border-[#00ffff] focus:ring-2 focus:ring-[#00ffff]"
+                  className="h-12 px-4 bg-[#1a1a1a] text-white border border-amber-400 focus:border-amber-400 focus:ring-2 focus:ring-amber-400"
                   placeholder="Full Name"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   required
                 />
                 <Input
-                  className="h-12 px-4 bg-[#1a1a1a] text-white border border-[#3cc1ff] focus:border-[#00ffff] focus:ring-2 focus:ring-[#00ffff]"
+                  className="h-12 px-4 bg-[#1a1a1a] text-white border border-amber-400 focus:border-amber-400 focus:ring-2 focus:ring-amber-400"
                   placeholder="Email"
                   type="email"
                   value={email}
@@ -98,7 +103,7 @@ export default function Home() {
                 <Button
                   type="submit"
                   size="lg"
-                  className="h-12 px-8 bg-[#3cc1ff] text-[#020c12] font-bold border border-[#00ffff] shadow-md hover:shadow-cyan-500/50 transition-all duration-200"
+                  className="h-12 px-8 bg-amber-500 text-[#020c12] font-bold shadow-md hover:shadow-cyan-500/50 transition-all duration-200"
                   disabled={isLoading}
                 >
                   {isLoading ? "loading..." : "Join the WaitList"}
