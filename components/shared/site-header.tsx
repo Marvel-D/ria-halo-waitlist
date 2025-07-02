@@ -19,7 +19,7 @@ export function SiteHeader() {
             transition={{ delay: 0.5 }}
             className="text-2xl font-bold"
           >
-            Halo.
+            AIME.
           </motion.span>
         </Link>
         <p className="text-base">
@@ -29,7 +29,7 @@ export function SiteHeader() {
             transition={{ delay: 0.5 }}
             className="font-bold"
           >
-            By the R.I.A.
+            By the Kultivate.
           </motion.span>
         </p>
       </div>
